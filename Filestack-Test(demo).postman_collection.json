@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "738f2030-8412-4fe1-8074-27dde3d42d2b",
+		"name": "Filestack-Test(demo)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17135438"
+	},
+	"item": [
+		{
+			"name": "GetAllImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://filestack-practice.onrender.com/",
+					"protocol": "https",
+					"host": [
+						"filestack-practice.onrender.com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetImageById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://filestack-practice.onrender.com/KpLfH2yaTuaiQUOtmoMd",
+					"protocol": "https",
+					"host": [
+						"filestack-practice.onrender.com"
+					],
+					"path": [
+						"KpLfH2yaTuaiQUOtmoMd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteImageById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://filestack-practice.onrender.com/pxPJGXkTQuwVb5oTXcgb",
+					"protocol": "https",
+					"host": [
+						"filestack-practice.onrender.com"
+					],
+					"path": [
+						"pxPJGXkTQuwVb5oTXcgb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostImagefromBody",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/MyProjects/Node 企業班-2023/filestack2/assets/images/03.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://filestack-practice.onrender.com/",
+					"protocol": "https",
+					"host": [
+						"filestack-practice.onrender.com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchImageById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/MyProjects/Node 企業班-2023/filestack2/assets/images/02.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://filestack-practice.onrender.com/iqcXspCKTdHrpGbVaqit",
+					"protocol": "https",
+					"host": [
+						"filestack-practice.onrender.com"
+					],
+					"path": [
+						"iqcXspCKTdHrpGbVaqit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
