@@ -155,6 +155,8 @@ app.post('/:id', async function (req, res) {
     }
 });
 
-// 監聽 port
-var port = process.env.PORT || 3000;
-app.listen(port);
+// // 監聽 port
+// var port = process.env.PORT || 3000;
+// app.listen(port);
+
+module.exports = app;
