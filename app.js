@@ -66,7 +66,7 @@ app.post('/', async function (req, res) {
                 console.log(error);
                 res.sendStatus(500);
             });
-            // console.log('Upload Result:', response)
+            console.log('Upload Result:', response)
             const { url } = response.data;
             let html = '';
 
@@ -104,7 +104,7 @@ app.delete('/:id', async function (req, res) {
                 console.log(error);
                 res.sendStatus(500);
             });
-        // console.log('Delete Result:', response)
+        console.log('Delete Result:', response)
 
         let html = '';
 
@@ -146,7 +146,7 @@ app.post('/:id', async function (req, res) {
                 console.log(error);
                 res.sendStatus(500);
             });
-            // console.log('Rewrite Result:', response)
+            console.log('Rewrite Result:', response)
             res.send(response.data);
         }
     } catch (error) {
